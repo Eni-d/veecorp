@@ -6,8 +6,8 @@
   "scripts": {
     "build": "npx tailwindcss -i ./input.css -o ./public/css/main.css",
     "watch": "npx tailwindcss -i ./input.css -o ./public/css/main.css --watch",
-    "dev": "nodemon index.js",
-    "start": "node index.js"
+    "dev": "nodemon app.js",
+    "start": "node app.js"
   },
   "author": "",
   "license": "ISC",
