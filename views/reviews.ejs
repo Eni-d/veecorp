@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Veecorp</title>
+</head>
+
+<body class="bg-slate-50">
+    <nav class="shadow-xl">
+        <div class="container mx-auto mt-3 flex flex-row justify-between items-center p-3">
+            <h1 class="text-sky-700 font-black text-2xl">Veecorp</h1>
+            <div class="flex flex-row justify-between items-center space-x-5 font-medium text-slate-700">
+                <a href="/dashboard" class="text-sky-700 font-bold">Home</a>
+                <a href="/feed" class="hover:text-sky-700">Feed</a>
+                <a href="" class="text-red-700 hover:text-red-900" id="logout">Log Out</a>
+            </div>
+            <p></p>
+        </div>
+    </nav>
+
+    <main class="mt-16 text-slate-700">
+        <div class="container mx-auto text-center mb-10">
+            <h1 class="font-bold text-3xl" id="user">Reviews</h1>
+            <button class="bg-sky-700 text-white rounded p-2 w-48 font-medium mt-5 hover:bg-sky-900" id="addReviewBtn">Add Review</button>
+            <div class="flex hidden container mx-auto flex-col justify-center items-center mt-10" id="reviewForm">
+                <div class="hidden bg-green-300 container mx-auto flex flex-row justify-center items-center rounded-md p-3 w-60 mb-6 text-green-900 font-bold" id="success"></div>
+                <textarea name="review" id="review" cols="30" rows="10" class="bg-slate-50 block rounded w-80 md:w-96 p-3 mt-5 border border-slate-300 border-solid" placeholder="Your review..."></textarea>
+                <button class="bg-green-700 text-white rounded p-2 w-48 font-medium mt-5 hover:bg-green-900" id="submit">Submit</button>
+            </div>
+        </div>
+        <!-- Reviews -->
+        <div class="container mx-auto flex flex-col justify-center items-center" id="reviews">
+
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Faker/3.1.0/faker.min.js" referrerpolicy="no-referrer"></script>
+    <script src="js/reviews.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Veecorp</title>
+</head>
+
+<body class="bg-slate-50">
+    <nav class="shadow-xl">
+        <div class="container mx-auto mt-3 flex flex-row justify-between items-center p-3">
+            <h1 class="text-sky-700 font-black text-2xl">Veecorp</h1>
+            <div class="flex flex-row justify-between items-center space-x-5 font-medium text-slate-700">
+                <a href="/" class="hover:text-sky-700">Home</a>
+                <a href="" class="text-sky-700 font-bold">Sign Up</a>
+                <a href="/login" class="hover:text-sky-700">Log In</a>
+            </div>
+            <p></p>
+        </div>
+    </nav>
+
+    <main class="mt-16 text-slate-700">
+        <form action="" class="container mx-auto flex flex-col justify-between items-center rounded p-3">
+            <h1 class="text-sky-700 font-extrabold text-3xl mb-10">Sign Up</h1>
+            <p class="font-bold md:text-xl">Your username will be generated for you.</p>
+            <input type="password" name="password" id="password" class="rounded w-80 md:w-96 p-3 mt-5 border border-slate-300 border-solid" placeholder="Password">
+            <button class="bg-sky-700 text-white rounded-full p-3 w-60 font-medium mt-12 hover:bg-sky-900" id="btn">Generate user</button>
+            <div class="flex flex-row justify-between items-center mt-12">
+                <p class="font-medium">Already have an account? &nbsp;</p>
+                <a href="/login" class="text-sky-700 font-medium hover:text-sky-900">Log In</a>
+            </div>
+        </form>
+    </main>
+
+    <script src="js/signup.js"></script>
+</body>
+
+</html>

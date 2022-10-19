@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Veecorp</title>
+</head>
+
+<body class="bg-slate-50">
+    <nav class="shadow-xl">
+        <div class="container mx-auto mt-3 flex flex-row justify-between items-center p-3">
+            <h1 class="text-sky-700 font-black text-2xl">Veecorp</h1>
+            <div class="flex flex-row justify-between items-center space-x-5 font-medium text-slate-700">
+                <a href="/dashboard" class="hover:text-sky-700">Home</a>
+                <a href="" class="text-sky-700 font-bold">Feed</a>
+                <a href="" class="text-red-700 hover:text-red-900" id="logout">Log Out</a>
+            </div>
+            <p></p>
+        </div>
+    </nav>
+
+    <main class="mt-10 text-slate-700">
+        <div class="container mx-auto text-center mb-14">
+            <h1 class="font-bold text-3xl" id="user">My Feed</h1>
+        </div>
+        <!-- Feeds -->
+        <div class="container mx-auto flex flex-col justify-center items-center" id="feeds">
+
+        </div>
+    </main>
+
+    <script src="js/feed.js"></script>
+</body>
+
+</html>
