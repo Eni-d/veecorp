@@ -6,15 +6,15 @@ const path = require('path')
 const session = require('express-session')
 const app = express()
 
-mongoose.connect('mongodb://localhost/v', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-})
-
-// mongoose.connect('mongodb+srv://dbDaniel:dbDaniel@cluster0.rcsbe.mongodb.net/favour?retryWrites=true&w=majority', {
+// mongoose.connect('mongodb://localhost/v', {
 //     useNewUrlParser: true,
 //     useUnifiedTopology: true
 // })
+
+mongoose.connect('mongodb+srv://dbDaniel:dbDaniel@cluster0.rcsbe.mongodb.net/favour?retryWrites=true&w=majority', {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+})
 
 app.set('view engine', 'ejs')
 app.use(express.static(path.join(__dirname, 'public')))
