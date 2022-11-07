@@ -24,7 +24,7 @@
     </nav>
 
     <main class="mt-16 text-slate-700">
-        <div class="container mx-auto text-center mb-10">
+        <!-- <div class="container mx-auto text-center mb-10">
             <h1 class="font-bold text-3xl" id="user">Reviews</h1>
             <button class="bg-sky-700 text-white rounded p-2 w-48 font-medium mt-5 hover:bg-sky-900" id="addReviewBtn">Add Review</button>
             <div class="flex hidden container mx-auto flex-col justify-center items-center mt-10" id="reviewForm">
@@ -32,8 +32,43 @@
                 <textarea name="review" id="review" cols="30" rows="10" class="bg-slate-50 block rounded w-80 md:w-96 p-3 mt-5 border border-slate-300 border-solid" placeholder="Your review..."></textarea>
                 <button class="bg-green-700 text-white rounded p-2 w-48 font-medium mt-5 hover:bg-green-900" id="submit">Submit</button>
             </div>
+        </div> -->
+        <div class="container mx-auto text-center mb-10">
+            <h1 class="font-bold text-3xl" id="user">Reviews</h1>
+            <button class="bg-sky-700 text-white rounded p-2 w-48 font-medium mt-5 hover:bg-sky-900" id="addReviewBtn">Add Review</button>
+            <div class="hidden bg-green-300 container mx-auto flex flex-row justify-center items-center rounded-md p-3 w-60 mb-6 mt-5 text-green-900 font-bold" id="success">
+                <!-- Success message goes here but is controlled from the javascript side-->
+            </div>
+            <div class="flex hidden container mx-auto flex-col justify-center items-center mt-10" id="reviewForm">
+                
+                <div class="form-group text-left">
+                    <label for="workingHours" class="font-bold text-xl">Working Hours</label>
+                    <textarea name="workingHours" id="workingHours" cols="30" rows="10" class="bg-slate-50 block rounded w-80 md:w-96 p-3 mt-2 border border-slate-300 border-solid" placeholder="Your review on working hours..."></textarea>
+                </div>
+                <div class="form-group text-left mt-8">
+                    <label for="compensation" class="font-bold text-xl">Compensation</label>
+                    <textarea name="compensation" id="compensation" cols="30" rows="10" class="bg-slate-50 block rounded w-80 md:w-96 p-3 mt-2 border border-slate-300 border-solid" placeholder="Your review on compensation..."></textarea>
+                </div>
+                <div class="form-group text-left mt-8">
+                    <label for="personnelDevelopment" class="font-bold text-xl">Personnel Development</label>
+                    <textarea name="personnelDevelopment" id="personnelDevelopment" cols="30" rows="10" class="bg-slate-50 block rounded w-80 md:w-96 p-3 mt-2 border border-slate-300 border-solid" placeholder="Your review on personnel development..."></textarea>
+                </div>
+                <div class="form-group text-left mt-8">
+                    <label for="workingAtmosphere" class="font-bold text-xl">Working Atmosphere</label>
+                    <textarea name="workingAtmosphere" id="workingAtmosphere" cols="30" rows="10" class="bg-slate-50 block rounded w-80 md:w-96 p-3 mt-2 border border-slate-300 border-solid" placeholder="Your review on working atmosphere..."></textarea>
+                </div>
+                <div class="form-group text-left mt-8">
+                    <label for="leadershipAndManagement" class="font-bold text-xl">Leadership and Management</label>
+                    <textarea name="leadershipAndManagement" id="leadershipAndManagement" cols="30" rows="10" class="bg-slate-50 block rounded w-80 md:w-96 p-3 mt-2 border border-slate-300 border-solid" placeholder="Your review on leadership and management..."></textarea>
+                </div>
+                <div class="form-group text-left mt-8">
+                    <label for="workingActivity" class="font-bold text-xl">Working Activity</label>
+                    <textarea name="workingActivity" id="workingActivity" cols="30" rows="10" class="bg-slate-50 block rounded w-80 md:w-96 p-3 mt-2 border border-slate-300 border-solid" placeholder="Your review on working activity..."></textarea>
+                </div>
+                <button class="bg-green-700 text-white rounded p-2 w-48 font-medium mt-5 hover:bg-green-900" id="submit">Submit</button>
+            </div>
         </div>
-        <!-- Reviews -->
+        <!-- Reviews of others -->
         <div class="container mx-auto flex flex-col justify-center items-center" id="reviews">
 
         </div>

@@ -1,5 +1,5 @@
 let btn = document.querySelector("#btn"),
-    username = document.querySelector("#username"),
+    email = document.querySelector("#email"),
     password = document.querySelector("#password"),
     error = document.querySelector("#error")
 
@@ -8,7 +8,7 @@ error.style.display = "none"
 btn.addEventListener("click", (e) => {
     e.preventDefault()
     let data = {
-        username: username.value,
+        email: email.value,
         password: password.value
     }
     fetch('/getUser', {

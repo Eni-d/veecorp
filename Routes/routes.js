@@ -32,9 +32,11 @@ router.get('/feed', (req, res) => {
 router.post('/createUser', (req, res) => {
     let username = uuidv4()
     username = "user-" + username.split("-")[1]
+    let email = req.body.email
     let password = req.body.password
     let data = {
         username,
+        email,
         password
     }
     User.create(data, (err, user) => {

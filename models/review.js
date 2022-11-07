@@ -1,5 +1,17 @@
 let mongoose = require('mongoose')
 
+// let reviewSchema = new mongoose.Schema({
+//     company: {
+//         type: String
+//     },
+//     username: {
+//         type: String
+//     },
+//     review: {
+//         type: String
+//     }
+// })
+
 let reviewSchema = new mongoose.Schema({
     company: {
         type: String
@@ -7,7 +19,22 @@ let reviewSchema = new mongoose.Schema({
     username: {
         type: String
     },
-    review: {
+    workingHours: {
+        type: String
+    },
+    compensation: {
+        type: String
+    },
+    personnelDevelopment: {
+        type: String
+    },
+    workingAtmosphere: {
+        type: String
+    },
+    leadershipAndManagement: {
+        type: String
+    },
+    workingActivity: {
         type: String
     }
 })
